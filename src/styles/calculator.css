@@ -1,0 +1,37 @@
+.calculator-container {
+  border: 1px solid black;
+}
+
+.calculator-container input {
+  width: 100%;
+  padding: 15px 5px;
+  text-align: right;
+  background-color: rgb(159 165 180);
+  color: white;
+  font-size: 20px;
+}
+
+.calculator-container input::placeholder {
+  color: white;
+  opacity: 1;
+}
+
+.calculator-buttons {
+  display: grid;
+  gap: 1px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  background-color: rgb(159 165 180);
+}
+
+.calculator-button {
+  padding: 20px 40px;
+  background-color: white;
+}
+
+.sign-button {
+  background-color: orange;
+}
+
+.zero-button {
+  grid-column: span 2;
+}
