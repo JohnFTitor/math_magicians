@@ -2,19 +2,21 @@
 
 # Math Magicians
 
-> Project headline description
+> Math Magicians is the first React Project I'm building. The main objective of this is to understand React features with a project-based learning approach. This is using them directly 
 
-![Preview]())
+![Preview](preview.png))
 
-Project Description
+Math Magicians! This is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make basic calculations and read a random math-related quote. 
 
 ## Built With
 
-Tecnologies used
+- HTML/CSS and JavaScript
+- React Framework
+- Visual Studio Code
 
 ## Live Demo
 
-[Live Demo Link]()
+[Live Demo Link](https://johnftitor.github.io/math_magicians/)
 
 
 ## Getting Started
