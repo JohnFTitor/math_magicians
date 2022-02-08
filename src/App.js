@@ -1,6 +1,10 @@
+import Calculator from './components/Calculator';
+
 function App() {
   return (
-    <div className="App"> </div>
+    <div className="App">
+      <Calculator />
+    </div>
   );
 }
 
