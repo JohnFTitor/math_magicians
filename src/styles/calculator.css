@@ -2,18 +2,13 @@
   border: 1px solid black;
 }
 
-.calculator-container input {
+.calculator-container p {
   width: 100%;
   padding: 15px 5px;
   text-align: right;
   background-color: rgb(159 165 180);
   color: white;
   font-size: 20px;
-}
-
-.calculator-container input::placeholder {
-  color: white;
-  opacity: 1;
 }
 
 .calculator-buttons {
