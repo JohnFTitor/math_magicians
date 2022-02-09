@@ -54,15 +54,15 @@ export default function calculate(obj, buttonName) {
       return { ...obj, next: `${obj.next}.` };
     }
     if (obj.operation) {
-      return { next: '0.' };
+      return { ...obj, next: '0.' };
     }
     if (obj.total) {
       if (obj.total.includes('.')) {
         return {};
       }
-      return { total: `${obj.total}.` };
+      return { ...obj, next: `${obj.total}.` };
     }
-    return { total: '0.' };
+    return { ...obj, next: '0.' };
   }
 
   if (buttonName === '=') {

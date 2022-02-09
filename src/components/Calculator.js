@@ -14,6 +14,12 @@ class Calculator extends React.Component {
     this.calculateHandler = this.calculateHandler.bind(this);
   }
 
+  componentWillUnmount() {
+    this.setState(() => ({
+      calculatorObj: {},
+    }));
+  }
+
   calculateHandler(buttonName) {
     this.setState((previousState) => ({
       calculatorObj: calculate(previousState.calculatorObj, buttonName),
