@@ -7,22 +7,45 @@ import PropTypes from 'prop-types';
 // eslint-disable-next-line react/prefer-stateless-function
 class Display extends React.Component {
   render() {
-    const { total, next } = this.props;
+    const { total, next, operation } = this.props;
 
     if (!next && !total) {
-      return <p> 0 </p>;
+      return (
+        <div className="display">
+          <span className="previusOperation"> 0 </span>
+          <p> 0 </p>
+        </div>
+      );
     }
     if (!next) {
       return (
-        <p>
-          {total}
-        </p>
+        <div className="display">
+          <span className="previusOperation">
+            {total}
+            {' '}
+            {operation}
+            {' '}
+            {next}
+          </span>
+          <p>
+            {total}
+          </p>
+        </div>
       );
     }
     return (
-      <p>
-        {next}
-      </p>
+      <div className="display">
+        <span className="previusOperation">
+          {total}
+          {' '}
+          {operation}
+          {' '}
+          {next}
+        </span>
+        <p>
+          {next}
+        </p>
+      </div>
     );
   }
 }
@@ -30,13 +53,13 @@ class Display extends React.Component {
 Display.defaultProps = {
   total: null,
   next: null,
-  // operation: null,
+  operation: null,
 };
 
 Display.propTypes = {
   total: PropTypes.string,
   next: PropTypes.string,
-  // operation: PropTypes.string,
+  operation: PropTypes.string,
 };
 
 export default Display;
