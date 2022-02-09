@@ -2,18 +2,26 @@
   border: 1px solid black;
 }
 
-.calculator-container input {
+.calculator-container p {
   width: 100%;
-  padding: 15px 5px;
+  padding: 20px 5px;
   text-align: right;
   background-color: rgb(159 165 180);
   color: white;
-  font-size: 20px;
+  font-size: 25px;
 }
 
-.calculator-container input::placeholder {
+.display {
+  position: relative;
+}
+
+.display span {
+  position: absolute;
+  left: 5px;
+  top: 5px;
+  padding: 5px;
   color: white;
-  opacity: 1;
+  font-size: 18px;
 }
 
 .calculator-buttons {
