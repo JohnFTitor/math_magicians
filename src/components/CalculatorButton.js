@@ -1,12 +1,15 @@
 import React from 'react';
-
 import PropTypes from 'prop-types';
+import calculate from '../logic/calculate';
 
-// As required for this project, components will be defined class based
-
-function CalculatorButton({ value, isSign, calculateHandler }) {
+function CalculatorButton({
+  value,
+  isSign,
+  calculateHandler,
+  calculatorObj,
+}) {
   function buttonCalculateHandler() {
-    calculateHandler(value);
+    calculateHandler(() => calculate(calculatorObj, value));
   }
 
   if (value === '0') {
@@ -26,6 +29,7 @@ CalculatorButton.propTypes = {
   value: PropTypes.string.isRequired,
   isSign: PropTypes.bool,
   calculateHandler: PropTypes.func.isRequired,
+  calculatorObj: PropTypes.objectOf(PropTypes.string).isRequired,
 };
 
 export default CalculatorButton;

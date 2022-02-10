@@ -2,8 +2,6 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 
-// As required for this project, components will be defined class based
-
 function Display({ total, next, operation }) {
   if (!next && !total) {
     return (
