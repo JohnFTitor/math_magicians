@@ -2,7 +2,7 @@ import React from 'react';
 
 import PropTypes from 'prop-types';
 
-function Display({ total, next, operation }) {
+const Display = ({ total, next, operation }) => {
   if (!next && !total) {
     return (
       <div className="display">
@@ -41,7 +41,7 @@ function Display({ total, next, operation }) {
       </p>
     </div>
   );
-}
+};
 
 Display.defaultProps = {
   total: null,

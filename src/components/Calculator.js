@@ -3,7 +3,7 @@ import '../styles/calculator.css';
 import CalculatorButton from './CalculatorButton';
 import Display from './CalculatorDisplay';
 
-function Calculator() {
+const Calculator = () => {
   const [calculatorObj, setCalculatorObj] = useState({});
 
   useEffect(() => setCalculatorObj({}), []);
@@ -38,6 +38,6 @@ function Calculator() {
       </div>
     </div>
   );
-}
+};
 
 export default Calculator;

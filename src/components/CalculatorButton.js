@@ -2,15 +2,15 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import calculate from '../logic/calculate';
 
-function CalculatorButton({
+const CalculatorButton = ({
   value,
   isSign,
   calculateHandler,
   calculatorObj,
-}) {
-  function buttonCalculateHandler() {
+}) => {
+  const buttonCalculateHandler = () => {
     calculateHandler(() => calculate(calculatorObj, value));
-  }
+  };
 
   if (value === '0') {
     return <button type="button" className="calculator-button zero-button" onClick={buttonCalculateHandler}>{value}</button>;
@@ -19,7 +19,7 @@ function CalculatorButton({
     return <button type="button" className="calculator-button sign-button" onClick={buttonCalculateHandler}>{value}</button>;
   }
   return <button type="button" className="calculator-button" onClick={buttonCalculateHandler}>{value}</button>;
-}
+};
 
 CalculatorButton.defaultProps = {
   isSign: false,
