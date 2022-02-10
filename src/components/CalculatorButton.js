@@ -1,31 +1,25 @@
 import React from 'react';
-
 import PropTypes from 'prop-types';
+import calculate from '../logic/calculate';
 
-// As required for this project, components will be defined class based
+const CalculatorButton = ({
+  value,
+  isSign,
+  calculateHandler,
+  calculatorObj,
+}) => {
+  const buttonCalculateHandler = () => {
+    calculateHandler(() => calculate(calculatorObj, value));
+  };
 
-class CalculatorButton extends React.Component {
-  constructor(props) {
-    super(props);
-    this.calculateHandler = this.calculateHandler.bind(this);
+  if (value === '0') {
+    return <button type="button" className="calculator-button zero-button" onClick={buttonCalculateHandler}>{value}</button>;
   }
-
-  calculateHandler() {
-    const { calculateHandler, value } = this.props;
-    calculateHandler(value);
+  if (isSign) {
+    return <button type="button" className="calculator-button sign-button" onClick={buttonCalculateHandler}>{value}</button>;
   }
-
-  render() {
-    const { value, isSign } = this.props;
-    if (value === '0') {
-      return <button type="button" className="calculator-button zero-button" onClick={this.calculateHandler}>{value}</button>;
-    }
-    if (isSign) {
-      return <button type="button" className="calculator-button sign-button" onClick={this.calculateHandler}>{value}</button>;
-    }
-    return <button type="button" className="calculator-button" onClick={this.calculateHandler}>{value}</button>;
-  }
-}
+  return <button type="button" className="calculator-button" onClick={buttonCalculateHandler}>{value}</button>;
+};
 
 CalculatorButton.defaultProps = {
   isSign: false,
@@ -35,6 +29,7 @@ CalculatorButton.propTypes = {
   value: PropTypes.string.isRequired,
   isSign: PropTypes.bool,
   calculateHandler: PropTypes.func.isRequired,
+  calculatorObj: PropTypes.objectOf(PropTypes.string).isRequired,
 };
 
 export default CalculatorButton;
