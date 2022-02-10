@@ -4,27 +4,18 @@ import PropTypes from 'prop-types';
 
 // As required for this project, components will be defined class based
 
-class CalculatorButton extends React.Component {
-  constructor(props) {
-    super(props);
-    this.calculateHandler = this.calculateHandler.bind(this);
-  }
-
-  calculateHandler() {
-    const { calculateHandler, value } = this.props;
+function CalculatorButton({ value, isSign, calculateHandler }) {
+  function buttonCalculateHandler() {
     calculateHandler(value);
   }
 
-  render() {
-    const { value, isSign } = this.props;
-    if (value === '0') {
-      return <button type="button" className="calculator-button zero-button" onClick={this.calculateHandler}>{value}</button>;
-    }
-    if (isSign) {
-      return <button type="button" className="calculator-button sign-button" onClick={this.calculateHandler}>{value}</button>;
-    }
-    return <button type="button" className="calculator-button" onClick={this.calculateHandler}>{value}</button>;
+  if (value === '0') {
+    return <button type="button" className="calculator-button zero-button" onClick={buttonCalculateHandler}>{value}</button>;
   }
+  if (isSign) {
+    return <button type="button" className="calculator-button sign-button" onClick={buttonCalculateHandler}>{value}</button>;
+  }
+  return <button type="button" className="calculator-button" onClick={buttonCalculateHandler}>{value}</button>;
 }
 
 CalculatorButton.defaultProps = {
