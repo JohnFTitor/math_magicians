@@ -1,19 +1,26 @@
 import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
-import Calculator from './components/Calculator';
+import CalculatorPage from './pages/CalculatorPage';
 import './styles/app.css';
 
 const App = () => (
-  <main className="App">
+  <div className="App">
     <nav>
-      <Link to="/"> Home </Link>
-      <Link to="/calculator"> Calculator </Link>
-      <Link to="/quote"> Quote </Link>
+      <ul className="nav">
+        <li> Math Magicians </li>
+        <ul className="nav nav-child">
+          <li><Link to="/"> Home </Link></li>
+          <li><Link to="/calculator"> Calculator </Link></li>
+          <li><Link to="/quote"> Quote </Link></li>
+        </ul>
+      </ul>
     </nav>
-    <Routes>
-      <Route path="calculator" element={<Calculator />} />
-    </Routes>
-  </main>
+    <main>
+      <Routes>
+        <Route path="calculator" element={<CalculatorPage />} />
+      </Routes>
+    </main>
+  </div>
 );
 
 export default App;
