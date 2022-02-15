@@ -49,7 +49,7 @@
 }
 
 .calculator-button:hover {
-  background-color: rgb(255 150 150); 
+  background-color: rgb(255 150 150);
 }
 
 .sign-button {
@@ -69,12 +69,12 @@
   .calculator-container {
     height: auto;
   }
-  
+
   .calculator-container p {
     padding: 20px 5px;
     font-size: 4.5rem;
   }
-  
+
   .calculator-container span {
     font-size: 3.5rem;
   }

@@ -6,7 +6,6 @@ html {
   font-size: 10px;
 }
 
-
 body {
   overflow: hidden;
 }
@@ -15,7 +14,7 @@ body {
   height: 100vh;
   display: grid;
   grid-template-rows: auto 1fr;
-  grid-template-areas: 
+  grid-template-areas:
     'header'
     'main-content';
 }
@@ -57,4 +56,3 @@ main {
 #logo {
   font-size: 5rem;
 }
-
