@@ -24,6 +24,7 @@ p {
 
 .quote-container p {
   margin: 10px 0;
+  text-align: center;
 }
 
 .author {

@@ -11,4 +11,12 @@ h1 {
   font-weight: 500;
   padding: 0 30px;
   color: rgb(255, 255, 255);
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  .calculator-parent {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
 }

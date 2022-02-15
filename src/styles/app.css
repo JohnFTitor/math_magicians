@@ -39,10 +39,12 @@ main {
   padding: 20px;
   background-color: rgba(47, 71, 102, 0.8);
   color: white;
+  flex-wrap: wrap;
 }
 
 .nav-child {
   gap: 3rem;
+  margin-top: 10px;
 }
 
 .nav-child a,
