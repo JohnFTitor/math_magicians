@@ -1,9 +1,7 @@
 import React from 'react';
-// Styles
-import '../styles/homePage.css';
 
 const Home = () => (
-  <div className="home-container">
+  <div className="general-container">
     <h1> Welcome to our page! </h1>
     <p>
       Lorem ipsum dolor sit amet, consectetur adipiscing elit.

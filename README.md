@@ -63,6 +63,8 @@ The deployment can be found in the Github Pages of this repository or through th
 
 ## Acknowledgments
 
+Here's a [link](https://github.com/arcanemutterings/random-quote-generator-api) to the API GitHub Repo from which I got the data for the quotes. Special thanks to the author!
+
 ## Show your support
 
 Give a ⭐️ if you like this project!

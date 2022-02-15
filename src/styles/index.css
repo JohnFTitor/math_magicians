@@ -2,3 +2,30 @@ button:hover,
 a:hover {
   cursor: pointer;
 }
+
+.general-container {
+  padding: 80px 40px;
+}
+
+p {
+  margin: 40px 0;
+  color: white;
+  font-size: 2.5rem;
+  line-height: 1.5;
+}
+
+.quote-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.quote-container p {
+  margin: 10px 0;
+}
+
+.author {
+  color: rgb(255 150 150);
+}

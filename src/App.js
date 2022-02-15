@@ -2,6 +2,7 @@ import React from 'react';
 import { Routes, Route, Link } from 'react-router-dom';
 import CalculatorPage from './pages/CalculatorPage';
 import Home from './pages/HomePage';
+import Quotes from './pages/QuotesPage';
 import './styles/app.css';
 
 const App = () => (
@@ -20,6 +21,7 @@ const App = () => (
       <Routes>
         <Route path="calculator" element={<CalculatorPage />} />
         <Route path="/" element={<Home />} />
+        <Route path="quote" element={<Quotes />} />
       </Routes>
     </main>
   </div>
