@@ -4,7 +4,8 @@
 
 > Math Magicians is the first React Project I'm building. The main objective of this is to understand React features with a project-based learning approach. This is using them directly 
 
-![Preview](preview.png))
+![Preview](preview.gif)
+![PreviewMobile](previewMobile.gif)
 
 Math Magicians! This is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make basic calculations and read a random math-related quote. 
 
