@@ -27,6 +27,7 @@ nav {
 main {
   grid-area: main-content;
   overflow: auto;
+  background-color: rgb(47, 47, 47);
 }
 
 /* Navigation bar */
@@ -49,5 +50,9 @@ main {
   color: white;
   font-size: 2.5rem;
   font-weight: 500;
+}
+
+#logo {
+  font-size: 5rem;
 }
 

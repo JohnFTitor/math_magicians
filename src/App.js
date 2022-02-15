@@ -7,7 +7,7 @@ const App = () => (
   <div className="App">
     <nav>
       <ul className="nav">
-        <li> Math Magicians </li>
+        <li id="logo"> Math Magicians </li>
         <ul className="nav nav-child">
           <li><Link to="/"> Home </Link></li>
           <li><Link to="/calculator"> Calculator </Link></li>
