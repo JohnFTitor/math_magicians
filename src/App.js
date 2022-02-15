@@ -1,17 +1,19 @@
 import React from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
 import Calculator from './components/Calculator';
 import './styles/app.css';
 
-// As required for this project, components will be defined class based
-// eslint-disable-next-line react/prefer-stateless-function
-class App extends React.Component {
-  render() {
-    return (
-      <div className="App">
-        <Calculator />
-      </div>
-    );
-  }
-}
+const App = () => (
+  <main className="App">
+    <nav>
+      <Link to="/"> Home </Link>
+      <Link to="/calculator"> Calculator </Link>
+      <Link to="/quote"> Quote </Link>
+    </nav>
+    <Routes>
+      <Route path="calculator" element={<Calculator />} />
+    </Routes>
+  </main>
+);
 
 export default App;
