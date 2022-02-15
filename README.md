@@ -4,7 +4,8 @@
 
 > Math Magicians is the first React Project I'm building. The main objective of this is to understand React features with a project-based learning approach. This is using them directly 
 
-![Preview](preview.png))
+![Preview](preview.gif)
+![PreviewMobile](previewMobile.gif)
 
 Math Magicians! This is a website for all fans of mathematics. It is a Single Page App (SPA) that allows users to make basic calculations and read a random math-related quote. 
 
@@ -62,6 +63,8 @@ The deployment can be found in the Github Pages of this repository or through th
 - LinkedIn: [Andres](https://www.linkedin.com/in/andresfelipe117/?locale=en_US)
 
 ## Acknowledgments
+
+Here's a [link](https://github.com/arcanemutterings/random-quote-generator-api) to the API GitHub Repo from which I got the data for the quotes. Special thanks to the author!
 
 ## Show your support
 
