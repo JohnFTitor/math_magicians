@@ -46,6 +46,8 @@ Such dependencies include React app and linters checks, for which you have to in
 
 You're free to use this project however you like it for educational purposes. Just keep in mind the acknowledgment described below
 
+To work on the project, run ```npm start``` in your terminal to deploy a live version of the development. This works in watch mode so it automatically reloads any need change you make to the files. 
+
 ### Run linters checks
 
 Linter Checks are automatically run with Github actions when there's a pull request. If you want to run them locally, remember to have the config file in the root of the local project. 
@@ -53,6 +55,8 @@ Linter Checks are automatically run with Github actions when there's a pull requ
 ### Deployment
 
 The deployment can be found in the Github Pages of this repository or through the link provided above
+
+Once a version of the project is ready, simply run ```npm run deploy``` in your terminal. This will build an optimized version of the project and upload it to the ```gh-pages``` branch on Github, thus updating the live version.
 
 ## Authors
 
