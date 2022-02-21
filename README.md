@@ -18,7 +18,8 @@ Math Magicians! This is a website for all fans of mathematics. It is a Single Pa
 ## Live Demo
 
 [Heroku Live Demo Link](https://jfmath-magicians.herokuapp.com/)
-[Netlify](https://jfmath-magicians.netlify.app/)
+<br/>
+[Netlify Live Demo Link](https://jfmath-magicians.netlify.app/)
 
 
 ## Getting Started
