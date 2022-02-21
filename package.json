@@ -1,6 +1,9 @@
 {
   "name": "math_magicians",
   "version": "0.1.0",
+  "engines": {
+    "node": "16.x"
+  },
   "private": true,
   "homepage": "https://jfmath-magicians.herokuapp.com/",
   "dependencies": {
