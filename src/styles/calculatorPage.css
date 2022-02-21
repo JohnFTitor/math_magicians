@@ -1,0 +1,22 @@
+.calculator-parent {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+h1 {
+  font-size: 4.5rem;
+  font-weight: 500;
+  padding: 0 30px;
+  color: rgb(255, 255, 255);
+  margin-bottom: 40px;
+}
+
+@media screen and (max-width: 1000px) {
+  .calculator-parent {
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}

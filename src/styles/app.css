@@ -1,0 +1,58 @@
+/* Base Layout */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+html {
+  font-family: 'Poppins', sans-serif;
+  font-size: 10px;
+}
+
+body {
+  overflow: hidden;
+}
+
+.App {
+  height: 100vh;
+  display: grid;
+  grid-template-rows: auto 1fr;
+  grid-template-areas:
+    'header'
+    'main-content';
+}
+
+nav {
+  grid-area: header;
+}
+
+main {
+  grid-area: main-content;
+  overflow: auto;
+  background-color: rgb(47, 47, 47);
+}
+
+/* Navigation bar */
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  background-color: rgba(47, 71, 102, 0.8);
+  color: white;
+  flex-wrap: wrap;
+}
+
+.nav-child {
+  gap: 3rem;
+  margin-top: 10px;
+}
+
+.nav-child a,
+.nav li {
+  color: white;
+  font-size: 2.5rem;
+  font-weight: 500;
+}
+
+#logo {
+  font-size: 5rem;
+}
