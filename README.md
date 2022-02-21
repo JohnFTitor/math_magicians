@@ -56,9 +56,7 @@ Linter Checks are automatically run with Github actions when there's a pull requ
 
 ### Deployment
 
-The deployment can be found in the Github Pages of this repository or through the link provided above
-
-Once a version of the project is ready, simply run ```npm run deploy``` in your terminal. This will build an optimized version of the project and upload it to the ```gh-pages``` branch on Github, thus updating the live version.
+The deployment can be found in through any of the links provided above
 
 ## Authors
 
