@@ -1,8 +1,11 @@
 {
   "name": "math_magicians",
   "version": "0.1.0",
+  "engines": {
+    "node": "16.x"
+  },
   "private": true,
-  "homepage": "https://johnftitor.github.io/math_magicians/",
+  "homepage": "https://jfmath-magicians.herokuapp.com/",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.2",
@@ -21,15 +24,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
-  },
-  "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "eject": "react-scripts eject"
   },
   "browserslist": {
     "production": [
